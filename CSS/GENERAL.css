@@ -1,0 +1,249 @@
+@charset "utf-8";
+
+.totalcontainer {
+	 max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100%;
+  position: relative;
+}
+
+.custom-navbar .navbar {
+  background-color: #2E2D2D;
+}
+
+.navbar-nav {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+.navbar .navbar-nav .nav-link {
+  color: white; /* Color blanco para los enlaces en el nav */
+}
+
+.navbar .navbar-nav .nav-link.active {
+  color: #799BB7; /* Color azul para el enlace activo */
+}
+
+.navbar .navbar-nav .nav-link.carrito {
+	border: 1px solid #6697BF; /* Borde de 1px sólido de color azul para el enlace "Carrito" */
+	border-radius: 20px; /* Establece un borde redondeado para crear la forma ovalada */
+	padding: 5px 15px; /* Ajusta el relleno según sea necesario */
+	background-color: #799BB7;
+}
+
+
+
+
+.logo img {
+  max-height: 50px; /* Define la altura máxima deseada del logotipo */
+  max-width: 100%; /* Asegura que el logotipo se ajuste proporcionalmente al ancho disponible */
+}
+
+.Body {
+	background-image: url(../IMAGES/FONDO_Mesa%20de%20trabajo%201.jpg);
+	background-size: cover;
+	
+}
+
+
+main {
+  position: relative; /* Establece el posicionamiento relativo para que el footer se posicione correctamente */
+  min-height: calc(100vh - 60px); /* Establece un alto mínimo para el contenido principal teniendo en cuenta la altura del nav */
+	max-width: 1920px;
+}
+
+
+
+
+
+
+
+
+
+.container {
+  width: 100%; /* Ajusta el ancho al 100% */
+  padding-left: 20px; /* Agrega un relleno de 20px al lado izquierdo */
+  padding-right: 20px; /* Agrega un relleno de 20px al lado derecho */
+  margin-left: auto; /* Centra horizontalmente el contenedor */
+  margin-right: auto; /* Centra horizontalmente el contenedor */
+	max-width: 1920px;
+}
+
+
+.Maincontainer {
+	width: 100%; /* Ajusta el ancho al 100% */
+	padding-left: 20px; /* Agrega un relleno de 20px al lado izquierdo */
+	padding-right: 20px; /* Agrega un relleno de 20px al lado derecho */
+	margin-left: auto; /* Centra horizontalmente el contenedor */
+	margin-right: auto; /* Centra horizontalmente el contenedor */
+	max-width: 1920px;
+	padding-top: 60px;
+	margin-bottom: 20px;
+	font-size: medium;
+}
+
+
+
+
+
+
+
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: orange;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+    .footer img {
+		max-height:50px;
+      max-width: 10%;
+      margin-right: 10px;
+    }
+
+   .footer .word {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+  text-align: right;
+}
+
+
+
+
+
+
+
+
+.btn-get-started {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px 11px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px 0 0 0;
+  color: #fff;
+  background: #47b2e4;
+}
+
+.btn-get-started:hover {
+  background: #209dd8;
+}
+
+
+
+.slider{
+	width: 100%;
+	overflow: hidden;
+	margin-right: 5%;
+	padding-top: 20px;
+}
+.slider ul{
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 400%;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+
+.slider img {
+  width: 100%; /* Cambia el valor 'width' a '100%' */
+  min-width: 25%;
+  max-width: 100%;
+}
+
+
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+.slider, .slider ul, .slider img{
+    height: 100vh;
+		}
+	}
+
+
+.TextoBlanco {
+	color: #FFFFFF;
+	font-size: 100%;
+}
+
+
+.TituloBlanco {
+    color: #FFFFFF;
+    font-size: 250%;
+}
+
+
+.square-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    max-width: 600px;
+    padding: 20px;
+    background-image: url(../IMAGES/R%20Day_Mesa%20de%20trabajo%201%20copia%202.jpg);
+    font-size: x-large;
+    margin-left: 10px; /* Agrega un margen izquierdo de 10px a las columnas */
+    margin-right: 10px;
+    text-shadow: 3px 2px 5px #FFFFFF;
+}
+
+@media (max-width: 767px) {
+  .square-column {
+    min-height: 150px;
+  }
+}
+	
+
+.políticas {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	color: #FFFFFF;
+	margin-left: 100px;
+	margin-right: 100px;
+	text-align: justify;
+	padding-top: 111px;
+	padding-right: 111px;
+	padding-bottom: 111px;
+	padding-left: 111px;
+	background-color: #FFA21B;
+	font-size: 120%;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+
+
+.row {
+  justify-content: center; /* Centra horizontalmente las columnas */
+}
